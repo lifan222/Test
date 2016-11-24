@@ -48,8 +48,8 @@
       <file leaf-file-name="inilabs.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/inilabs/inilabs.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="279" column="27" selection-start-line="279" selection-start-column="27" selection-end-line="279" selection-end-column="27" />
+            <state relative-caret-position="466">
+              <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -466,12 +466,12 @@
       <workItem from="1479726692441" duration="5247000" />
       <workItem from="1479817972993" duration="6541000" />
       <workItem from="1479897650692" duration="2557000" />
-      <workItem from="1479986246078" duration="8293000" />
+      <workItem from="1479986246078" duration="8709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146626000" />
+    <option name="totallyTimeSpent" value="147042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
@@ -960,8 +960,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/inilabs/inilabs.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="279" column="27" selection-start-line="279" selection-start-column="27" selection-end-line="279" selection-end-column="27" />
+        <state relative-caret-position="466">
+          <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="8" />
           <folding />
         </state>
       </provider>
