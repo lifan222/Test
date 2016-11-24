@@ -1,4 +1,4 @@
-<div class="box">
+<div class="box box-student">
     <div class="box-header">
         <h3 class="box-title"><i class="fa icon-student"></i> <?=$this->lang->line('panel_title_student')?></h3>
 
@@ -70,34 +70,34 @@
 
                                                 <?php if(count($students)) {$i = 1; foreach($students as $student) { ?>
                                                     <tr>
-                                                        <td data-title="<?=$this->lang->line('slno')?>">
+                                                        <td id="student-no" data-title="<?=$this->lang->line('slno')?>">
                                                             <?php echo $i; ?>
                                                         </td>
 
-                                                        <td data-title="<?=$this->lang->line('student_name')?>">
+                                                        <td id="student-ming" data-title="<?=$this->lang->line('student_name')?>">
                                                             <?php echo $student->name; ?>
                                                         </td>
-                                                        <td data-title="<?=$this->lang->line('student_phone')?>">
+                                                        <td id="student-tele" data-title="<?=$this->lang->line('student_phone')?>">
                                                             <?php echo $student->phone; ?>
                                                         </td>
 
-                                                        <td data-title="<?=$this->lang->line('student_wechat')?>">
+                                                        <td id="student-wexin" data-title="<?=$this->lang->line('student_wechat')?>">
                                                             <?php echo $student->wechat; ?>
                                                         </td>
                                                         <?php  if (isset($set) &&  $set!="3"){?>
-                                                          <td data-title="<?=$this->lang->line('student_category')?>">
+                                                          <td id="student-state" data-title="<?=$this->lang->line('student_category')?>">
                                                               <?php
                                                               $studentCategory = $this->session->userdata("studentCategory");
                                                               echo $studentCategory[$student->category]; ?>
                                                           </td>
                                                           <?php  if (isset($set) &&  $set=="1"){?>
-                                                            <td data-title="<?=$this->lang->line('student_language_school')?>">
+                                                            <td id="student-school" data-title="<?=$this->lang->line('student_language_school')?>">
                                                                 <?php
                                                                     echo $student->language_school; 
                                                                 ?>
                                                             </td>
                                                           <?php  }?>
-                                                          <td data-title="<?=$this->lang->line('student_source')?>">
+                                                          <td id="student-from" data-title="<?=$this->lang->line('student_source')?>">
                                                               <?php
                                                               $studentSource = $this->session->userdata("studentSource");
                                                               
@@ -120,7 +120,7 @@
                                                                 }
                                                               ?>
                                                           </td>
-                                                          <td data-title="<?=$this->lang->line('student_salesman')?>">
+                                                          <td id="student-teacher" data-title="<?=$this->lang->line('student_salesman')?>">
                                                             <?php
                                                               $salesman = $this->teacher_m->get_teacher($student->salesmanID);
                                                               if(isset($salesman->name)){
@@ -129,15 +129,15 @@
                                                             ?>
                                                           </td>
                                                           <?php  if (isset($set) &&  $set=="1"){?>
-  	                                                        <td data-title="<?=$this->lang->line('student_possibility')?>">
+  	                                                        <td id="student-possible" data-title="<?=$this->lang->line('student_possibility')?>">
   	                                                            <?php
   	                                                            $studentPossibility = $this->session->userdata("studentPossibility");
   	                                                            echo $studentPossibility[$student->possibility]; ?>
   	                                                        </td>
-  	                                                        <td data-title="<?=$this->lang->line('student_createusername')?>">
+  	                                                        <td id="student-admin" data-title="<?=$this->lang->line('student_createusername')?>">
   	                                                            <?php echo $student->create_username; ?>
   	                                                        </td>
-  	                                                        <td data-title="<?=$this->lang->line('student_evaluation')?>">
+  	                                                        <td id="student-judge" data-title="<?=$this->lang->line('student_evaluation')?>">
                                                                 <?php
                                                                       $evaluations = $this->evaluation_m->get_order_by_evaluation(array('studentID' => $student->studentID));
                                                                       $tooltip_value = '';
@@ -151,7 +151,7 @@
                                                                 ?>
                                                                 <span data-toggle="tooltip" data-html="true" title="<?php echo $tooltip_value; ?>" style=" font-weight: bold; cursor: pointer;"><?php echo $student->evaluationCount; ?></span>
   	                                                        </td>
-  	                                                        <td data-title="<?=$this->lang->line('student_createdate')?>">
+  	                                                        <td id="student-time" data-title="<?=$this->lang->line('student_createdate')?>">
   	                                                            <?php echo date('Y-m-d',strtotime($student->create_date)); ?>
   	                                                        </td>
                                                           <?php } else {?>
@@ -171,7 +171,7 @@
                                                                     }
                                                                 ?>
   	                                                        </td>
-  	                                                        <td data-title="<?=$this->lang->line('student_paymentAmount')?>">
+  	                                                        <td  data-title="<?=$this->lang->line('student_paymentAmount')?>">
   	                                                            <?php echo $student->totalamount; ?>
   	                                                        </td>
   	                                                        <td data-title="<?=$this->lang->line('student_balance')?>">

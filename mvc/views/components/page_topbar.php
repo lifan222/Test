@@ -1,14 +1,15 @@
-        <!-- header logo: style can be found in header.less -->
+ <!-- header logo: style can be found in header.less -->
+
+ <style>
+     .topbar-line {
+         margin-left: 230px;
+         margin-right:20px;
+         height: 2px;
+         background: #5fa7d8
+     }
+ </style>
+
         <header class="header">
-            <a href="<?php echo base_url('dashboard/index'); ?>" class="logo">
-                <!-- Add the class icon to your logo image or logo icon to add the margining -->
-            <?php //if(count($siteinfos)) { echo $siteinfos->sname; } ?>
-            <?php
-            if(count($siteinfos->photo)) {
-                echo "<center><img width='140' height='42' src=".base_url('uploads/images/'.$siteinfos->photo)." /></center>";
-            }
-           ?>
-            </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->
@@ -24,15 +25,6 @@
                         <li class="dropdown messages-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="fa fa-bell-o"></i>
-                            </a>
-                        </li>
-                        <!-- Notifications: style can be found in dropdown.less -->
-                        <li class="dropdown notifications-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img class="language-img" src="<?php 
-                                $image = $this->session->userdata('lang'); 
-                                echo base_url('uploads/language_image/'.$image.'.png'); ?>" 
-                                /> 
                             </a>
                         </li>
                         <!-- User Account: style can be found in dropdown.less -->
@@ -97,4 +89,6 @@
                     </ul>
                 </div>
             </nav>
+            <div class="topbar-line"></div>
+
         </header>

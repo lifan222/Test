@@ -1,5 +1,5 @@
 
-<div class="box">
+<div class="box box-teacher">
     <div class="box-header">
         <h3 class="box-title"><i class="fa icon-teacher"></i> <?=$this->lang->line('panel_title')?></h3>
 
@@ -42,7 +42,7 @@
                         <tbody>
                             <?php if(count($teachers)) {$i = 1; foreach($teachers as $teacher) { ?>
                                 <tr>
-                                    <td data-title="<?=$this->lang->line('slno')?>">
+                                    <td id="teacher-no" data-title="<?=$this->lang->line('slno')?>">
                                         <?php echo $i; ?>
                                     </td>
                                     <!-- <td data-title="<?=$this->lang->line('teacher_photo')?>">
@@ -56,10 +56,10 @@
                                             echo img($array);
                                         ?>
                                     </td> -->
-                                    <td data-title="<?=$this->lang->line('teacher_name')?>">
+                                    <td id="teacher-ming" data-title="<?=$this->lang->line('teacher_name')?>">
                                         <?php echo $teacher->name; ?>
                                     </td>
-                                    <td data-title="<?=$this->lang->line('teacher_type')?>">
+                                    <td id="teacher-class" data-title="<?=$this->lang->line('teacher_type')?>">
                                         <?php 
                                             $teachertype = $this->session->userdata("teacherType");
                                             if($teacher->teachertype){
@@ -67,11 +67,11 @@
                                             }
                                         ?>
                                     </td>
-                                    <td data-title="<?=$this->lang->line('teacher_email')?>">
+                                    <td id="teacher-mail" data-title="<?=$this->lang->line('teacher_email')?>">
                                         <?php echo $teacher->email; ?>
                                     </td>
                                     <?php if($usertype == "Admin"){ ?>
-                                    <td data-title="<?=$this->lang->line('teacher_status')?>">
+                                    <td id="teacher-state" data-title="<?=$this->lang->line('teacher_status')?>">
                                       <div class="onoffswitch-small" id="<?=$teacher->teacherID?>">
                                           <input type="checkbox" id="myonoffswitch<?=$teacher->teacherID?>" class="onoffswitch-small-checkbox" name="paypal_demo" <?php if($teacher->teacheractive === '1') echo "checked='checked'"; ?>>
                                           <label for="myonoffswitch<?=$teacher->teacherID?>" class="onoffswitch-small-label">

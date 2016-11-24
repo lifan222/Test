@@ -4,153 +4,53 @@
 
 ?>
 
- <div class="row">
-   <?php
-    if($usertype == "Admin" || $usertype == "TeacherManager" ) {
-   ?>
-     <div class="col-lg-3 col-xs-6">
-        <div class="small-box ">
-            <a class="small-box-footer" href="<?=base_url('student')?>">
-                <div class="icon bg-aqua" style="padding: 9.5px 18px 8px 18px;">
-                    <i class="fa icon-student"></i>
-                </div>
-                <div class="inner ">
-                    <h3>
-                        <?=count($student)?>
-                    </h3>
-                    <p>
-                        <?=$this->lang->line("menu_student")?>
-                    </p>
-                </div>
-            </a>
-        </div>
-    </div>
-     <?php }?>
-
-    <?php
-    //部门主管不显示
-    if($usertype != "TeacherManager" ) {
-   ?>  
-    <div class="col-lg-3 col-xs-6">
-      <div class="small-box ">
-          <a class="small-box-footer" href="<?=base_url('subject')?>">
-              <div class="icon bg-yellow" style="padding: 9.5px 18px 8px 18px;">
-                  <i class="fa icon-subject"></i>
-              </div>
-              <div class="inner ">
-                  <h3>
-                      <?=count($subject)?>
-                  </h3>
-                  <p>
-                      <?=$this->lang->line("menu_subject")?>
-                  </p>
-              </div>
-          </a>
-      </div>
-    </div>
-     <div class="col-lg-3 col-xs-6">
-      <div class="small-box ">
-          <a class="small-box-footer" href="<?=base_url('routine')?>">
-              <div class="icon bg-yellow" style="padding: 9.5px 18px 8px 18px;">
-                  <i class="fa icon-routine"></i>
-              </div>
-              <div class="inner ">
-                  <h3>
-                      <?=count($routines)?>
-                  </h3>
-                  <p>
-                      <?=$this->lang->line("menu_routine")?>
-                  </p>
-              </div>
-          </a>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-xs-6">
-      <div class="small-box ">
-          <a class="small-box-footer" href="<?=base_url('teacher')?>">
-              <div class="icon bg-red" style="padding: 9.5px 18px 8px 18px;">
-                  <i class="fa icon-teacher"></i>
-              </div>
-              <div class="inner ">
-                  <h3>
-                      <?=count($teacher)?>
-                  </h3>
-                  <p>
-                      <?=$this->lang->line("menu_teacher")?>
-                  </p>
-              </div>
-          </a>
-      </div>
-    </div>
-<?php }?>
-
-    <?php
-    //教师，部门主管，销售，事务，需要签到
-    if($usertype == "Teacher" || $usertype == "TeacherManager" || $usertype == "Receptionist" || $usertype == "Salesman") {
-   ?>
- 
-    <div class="col-lg-3 col-xs-6">
-      <div class="small-box ">
-          <a class="small-box-footer" href="<?=base_url('tattendance/add')?>">
-              <div class="icon bg-aqua" style="padding: 9.5px 18px 8px 18px;">
-                  <i class="fa icon-routine"></i>
-              </div>
-              <div class="inner ">
-                  <h3>
-                      <?=count($teacher)?>
-                  </h3>
-                  <p>今日签到
-                  </p>
-              </div>
-          </a>
-      </div>
-    </div> 
-   
- 
-   <?php }?>
-
-    <?php
-    //学生显示缴费记录
-    if($usertype == "student" ) {
-   ?>
-   <!-- 
-     <div class="col-lg-3 col-xs-6">
-      <div class="small-box ">
-          <a class="small-box-footer" href="<?=base_url('invoice')?>">
-              <div class="icon bg-blue" style="padding: 9.5px 18px 8px 18px;">
-                  <i class="fa icon-invoice"></i>
-              </div>
-              <div class="inner ">
-                <h3>
-                    <?=count($invoice)?>
-                </h3>
-                <p>
-                  <?=$this->lang->line("menu_invoice")?>
-                </p>
-              </div>
-          </a>
-      </div>
-    </div> -->
-   <?php }?>
-
- </div>
 
   <div class="row">
     <div class="col-sm-12">
         <div class="box box-primary">
             <div class="box-body no-padding">
                 <!-- THE CALENDAR -->
-                <div id="calendar"></div>
+                <div id="calendar">
+                    <div id="custom-header" class="row">
+                        <div id="header-left">
+                            <p>课程日历</p>
+                            <p>Curriculum Calendar</p>
+                        </div>
+
+                        <div id="header-center">
+                            <div class="fc-button-group">
+                                <button id="cus-button-prev" type="button" class="btn btn-default"> ＜ </button>
+                                <div>
+                                    <p id="center-title"></p>
+                                    <button id="cus-button-today" type="button" class="btn btn-default">今日</button>
+                                </div>
+                                <button id="cus-button-next" type="button" class="btn btn-default"> ＞ </button>
+                            </div>
+
+
+
+                        </div>
+
+                        <div id="header-right">
+                            <div class="fc-button-group">
+                                <button id="cus-button-month" type="button" class="btn btn-default">月</button>
+                                <button id="cus-button-week" type="button" class="btn btn-default">周</button>
+                                <button id="cus-button-day" type="button" class="btn btn-default"> 日 </button>
+                            </div>
+                        </div>
+
+
+
+                </div>
             </div><!-- /.box-body -->
         </div><!-- /. box -->
     </div><!-- /.col -->
-
-
  </div><!-- /.row -->
 
   <script type="text/javascript" src="<?php echo base_url('assets/fullcalendar/fullcalendar.min.js'); ?>"></script>
   <script type="text/javascript" src="<?php echo base_url('assets/fullcalendar/lang-all.js'); ?>"></script>
+
+
   <style>
     .fc-event{
         font-size: 14px;
@@ -159,8 +59,51 @@
         font-size: 16px;
         cursor:pointer;
     }
+
+    #custom-header {
+        margin-left: 13%;
+        width: 78%;
+        position: absolute;
+        top: 15px;
+        color: #5fa7d8;
+        column-count: 3;
+        font-family: Helvetica;
+        font-weight: bolder;
+    }
+
+      #center-title {
+          padding-left: 10px;
+          padding-right: 10px;
+          margin-top: 0;
+          font-size: 1.5vw;
+      }
+
+      #cus-button-today {
+          width: 60%;
+          margin-left: 20%;
+          margin-right: 20%;
+      }
+
+      #header-left p {
+          font-size: 1.5vw;
+      }
+
+      #header-right div {
+          width: 100%;
+          margin-left: 60%;
+      }
+
+
+
+
   </style>
+
+
   <script type="text/javascript">
+
+
+
+
     $(function() {
         var date = new Date();
         var d = date.getDate(),
@@ -169,17 +112,17 @@
         $('#calendar').fullCalendar({
             timezone: 'local',
             timeFormat: 'H:mm',
-            lang: 'zh-cn',
+            lang: 'en',
             weekMode: 'liquid',
             header: {
-                left: 'prev,next,today',
-                center: 'title',
+                left: '',
+                center: '',
                 right: 'month,agendaWeek,agendaDay'
             },
             eventLimit: true,
     		events: [
                 <?php
-
+                    $var = array();
                     foreach ($routines as $routine) {
                         $subject_teacher_details = $this->subject_teacher_details_m->get_by_subjectID($routine->subjectID);
                         $teacherNames = ' ';
@@ -191,13 +134,29 @@
                                 $teacherNames = $teacherNames.' | '.$item->name;
                             }
                         }
+
+                        if (array_key_exists($routine->date, $var)) {
+                            $var[$routine->date] ++;
+                        }else  {
+                            $var[$routine->date] = 1;
+                        }
+
+
+//                        echo '{';
+//                            echo "id: '".$routine->routineID."', ";
+//                            echo "title: '有".$var[$routine->date]."门课程', ";
+//                            echo "start: '".$routine->date."T".$routine->start_time."', ";
+//                            echo "end: '".$routine->date."T".$routine->end_time."', ";
+//                            echo "textColor:'#FF00FF',";
+//                            echo "color: '".$routine->color."', ";
+//                        echo '},';
+                    }
+
+                    foreach ($var as $key => $value) {
                         echo '{';
-                            echo "id: '".$routine->routineID."', ";
-                            echo "title: '".$routine->subject." ".$routine->room.$teacherNames."', ";
-                            echo "start: '".$routine->date."T".$routine->start_time."', ";
-                            echo "end: '".$routine->date."T".$routine->end_time."', ";
-                            echo "textColor:'#000',";
-                            echo "color: '".$routine->color."', ";
+                        echo "title: '有".$value."门课程', ";
+                        echo "start: '".$key."', ";
+                        echo "color: 'transparent', ";
                         echo '},';
                     }
 
@@ -223,9 +182,53 @@
                  $('#subject-teachers').text(data.teachers);
       	         $('#exampleModal').modal();
       	      });
-            },
+            }
         });
     });
+
+
+    //      ------------------------------------------------------------
+
+//    var titleleft = document.getElementById("title-left");
+//    var calendar = $('#calendar').fullCalendar('getCalendar');
+//    console.log(m);
+
+
+
+    $(document).ready( function(){
+
+        $('.fc-toolbar').css('marginButtom', '0');
+        $('.fc-right').hide();
+        var agendaWeed = function(){
+            $('.fc-month-button').click();
+        };
+
+        var momentRefresh = function () {
+            var moment = $('#calendar').fullCalendar('getDate');
+            var dateViewStr = moment.format("Y")+"年"+moment.format("M")+"月";
+            $('#center-title').html(dateViewStr);
+        };
+        setInterval(momentRefresh, 100);
+
+        $('#cus-button-prev').click(function() {
+            $('#calendar').fullCalendar('prev');
+        });
+        $('#cus-button-next').click(function() {
+            $('#calendar').fullCalendar('next');
+        });
+        $('#cus-button-today').click(function() {
+            $('#calendar').fullCalendar('today');
+        });
+
+
+
+    });
+
+
+
+    //      ------------------------------------------------------------
+
+
   </script>
 
 

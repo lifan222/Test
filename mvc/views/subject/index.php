@@ -70,23 +70,23 @@
                         <tbody>
                             <?php if(count($subjects)) {$i = 1; foreach($subjects as $subject) { ?>
                                 <tr>
-                                    <td data-title="<?=$this->lang->line('slno')?>">
+                                    <td id="course-no" data-title="<?=$this->lang->line('slno')?>">
                                         <?php echo $i; ?>
                                     </td>
-                                    <td data-title="<?=$this->lang->line('subject_name')?>">
+                                    <td id="course-name" data-title="<?=$this->lang->line('subject_name')?>">
                                         <?php echo $subject->subject; ?>
                                     </td>
                                     </td>
-                                    <td data-title="<?=$this->lang->line('subject_amount')?>">
+                                    <td id="course-fee" data-title="<?=$this->lang->line('subject_amount')?>">
                                         <?php echo $subject->amount; ?>
                                     </td>                                    
-                                     <td data-title="<?=$this->lang->line('subject_group')?>">
+                                     <td id="course-group"data-title="<?=$this->lang->line('subject_group')?>">
                                         <?php  if(isset($subjectgroups[$subject->subjectGroup])) { echo $subjectgroups[$subject->subjectGroup];} ?>
                                     </td>
                                     <!--<td data-title="<?=$this->lang->line('subject_code')?>">
                                         <?php echo $subject->subject_code; ?>
                                     </td> -->
-                                    <td data-title="<?=$this->lang->line('subject_teacher')?>">
+                                    <td id="course-teacher" data-title="<?=$this->lang->line('subject_teacher')?>">
                                         <?php
                                             $subject_teacher_details = $this->subject_teacher_details_m->get_by_subjectID($subject->subjectID);
                                             foreach($subject_teacher_details as $item) { 

@@ -494,7 +494,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h3 class="modal-title"><?=$this->lang->line('add_evaluation')?></h4>
+                <h3 class="modal-title"><?=$this->lang->line('add_evaluation')?></h3>
             </div>
             <div class="modal-body">
             <input type="hidden" name="evaluationID" id="evaluationID" value="">

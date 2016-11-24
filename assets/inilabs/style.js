@@ -12,11 +12,16 @@ $(function() {
             $('.row-offcanvas').toggleClass('active');
             $('.left-side').removeClass("collapse-left");
             $(".right-side").removeClass("strech");
+            $(".navbar-static-top").removeClass("strech");
             $('.row-offcanvas').toggleClass("relative");
+            $(".topbar-line").removeClass("strech");
         } else {
             //Else, enable content streching
             $('.left-side').toggleClass("collapse-left");
             $(".right-side").toggleClass("strech");
+            $(".navbar-static-top").toggleClass("strech");
+            $(".topbar-line").toggleClass("strech");
+
         }
     });
 

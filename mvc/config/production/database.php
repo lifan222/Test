@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'aa1khctdfbcclv3.c0hytilhpdt4.ap-northeast-1.rds.amazonaws.com';
+$db['default']['hostname'] = 'aa6ibts59vs8i7.cdrldhxrrede.ap-southeast-1.rds.amazonaws.com';
 $db['default']['username'] = 'admin';
 $db['default']['password'] = '12345678';
 $db['default']['database'] = 'school';

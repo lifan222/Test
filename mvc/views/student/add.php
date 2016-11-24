@@ -1,5 +1,5 @@
 
-<div class="box">
+<div class="box box-student">
     <div class="box-header">
         <h3 class="box-title"><i class="fa icon-student"></i> <?=$this->lang->line('panel_title')?></h3>
 

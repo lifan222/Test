@@ -26,7 +26,7 @@
 <div>
 
 <!-- Nav tabs -->
-<ul class="nav nav-tabs" role="tablist">
+<ul class="nav nav-tabs" id="search-back" role="tablist">
 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">快速检索</a></li>
 <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">普通检索</a></li>
 <style type="text/css">
@@ -34,7 +34,7 @@
     margin-bottom: -4px;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #D9E0E7;
+    background-color: rgba(255,255,255,0);
 }
 </style>
 </ul>
@@ -303,24 +303,6 @@
 
 
 <script type="text/javascript">
-/*   $('#classesID').change(function() {
-var classesID = $(this).val();
-if(classesID == 0) {
-    $('#hide-table').hide();
-    $('.nav-tabs-custom').hide();
-} else {
-    $.ajax({
-        type: 'POST',
-        url: "<?=base_url('student/student_list')?>",
-        data: "id=" + classesID,
-        dataType: "html",
-        success: function(data) {
-            window.location.href = data;
-        }
-    });
-}
-});
-*/
 var currentTab = '';
 $('#advancedSearch').click(function() {
 // alert("dddd");

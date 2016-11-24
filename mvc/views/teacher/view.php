@@ -151,7 +151,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h3 class="modal-title"><?=$this->lang->line('teacher_add_transportation_expenses')?></h4>
+                    <h3 class="modal-title"><?=$this->lang->line('teacher_add_transportation_expenses')?></h3>
                 </div>
                 <div class="modal-body">
                 <input type="hidden" name="option_type_id" id="option_type_id" value="">

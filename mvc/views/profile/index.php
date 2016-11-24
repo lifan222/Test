@@ -3,10 +3,11 @@
     $usertype = $this->session->userdata('usertype');
     if($usertype == "Admin") {
 ?>
-    <section class="panel">
+    <section class="panel panel-profile">
         <div class="profile-view-head">
             <a href="#">
-                <?=img(base_url('uploads/images/'.$admin->photo))?>
+                <img style="display:block" src="<?=base_url("uploads/images/wxadmin.png");
+                ?>"  alt="" /></a>
             </a>
             <h1><?=$admin->name?></h1>
             <p><?=$this->lang->line($this->lang->line($admin->usertype))?></p>
@@ -15,13 +16,13 @@
             <h1><?=$this->lang->line("personal_information")?></h1>
             <div class="row">
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_email")?> </span>: <?=$siteinfos->email?></p>
+                    <p><span><?=$this->lang->line("profile_email")?> :</span> <?=$siteinfos->email?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_phone")?> </span>: <?=$siteinfos->phone?></p>
+                    <p><span><?=$this->lang->line("profile_phone")?> :</span> <?=$siteinfos->phone?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_address")?> </span>: <?=$siteinfos->address?></p>
+                    <p><span><?=$this->lang->line("profile_address")?> :</span> <?=$siteinfos->address?></p>
                 </div>
             </div>
 
@@ -41,22 +42,22 @@
             <h1><?=$this->lang->line("personal_information")?></h1>
             <div class="row">
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_dob")?> </span>: <?=date("d M Y", strtotime($user->dob));?></p>
+                    <p><span><?=$this->lang->line("profile_dob")?> :</span> <?=date("d M Y", strtotime($user->dob));?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_jod")?> </span>: <?=date("d M Y", strtotime($user->jod))?></p>
+                    <p><span><?=$this->lang->line("profile_jod")?> :</span> <?=date("d M Y", strtotime($user->jod))?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_sex")?> </span>: <?=$user->sex?></p>
+                    <p><span><?=$this->lang->line("profile_sex")?> :</span> <?=$user->sex?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_email")?> </span>: <?=$user->email?></p>
+                    <p><span><?=$this->lang->line("profile_email")?> :</span> <?=$user->email?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_phone")?> </span>: <?=$user->phone?></p>
+                    <p><span><?=$this->lang->line("profile_phone")?> :</span> <?=$user->phone?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_address")?> </span>: <?=$user->address?></p>
+                    <p><span><?=$this->lang->line("profile_address")?> :</span> <?=$user->address?></p>
                 </div>
             </div>
         </div>
@@ -75,25 +76,25 @@
             <h1><?=$this->lang->line("personal_information")?></h1>
             <div class="row">
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_dob")?> </span>: <?=date("d M Y", strtotime($teacher->dob))?></p>
+                    <p><span><?=$this->lang->line("profile_dob")?> :</span> <?=date("d M Y", strtotime($teacher->dob))?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_jod")?> </span>: <?=date("d M Y", strtotime($teacher->jod))?></p>
+                    <p><span><?=$this->lang->line("profile_jod")?> :</span> <?=date("d M Y", strtotime($teacher->jod))?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_sex")?> </span>: <?=$teacher->sex?></p>
+                    <p><span><?=$this->lang->line("profile_sex")?> :</span> <?=$teacher->sex?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_religion")?> </span>: <?=$teacher->religion?></p>
+                    <p><span><?=$this->lang->line("profile_religion")?> :</span> <?=$teacher->religion?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_email")?> </span>: <?=$teacher->email?></p>
+                    <p><span><?=$this->lang->line("profile_email")?> :</span> <?=$teacher->email?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_phone")?> </span>: <?=$teacher->phone?></p>
+                    <p><span><?=$this->lang->line("profile_phone")?> :</span> <?=$teacher->phone?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_address")?> </span>: <?=$teacher->address?></p>
+                    <p><span><?=$this->lang->line("profile_address")?> :</span> <?=$teacher->address?></p>
                 </div>
             </div>
         </div>
@@ -114,29 +115,29 @@
             <h1><?=$this->lang->line("personal_information")?></h1>
             <div class="row">
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_roll")?> </span>: <?=$student->roll?></p>
+                    <p><span><?=$this->lang->line("profile_roll")?> :</span> <?=$student->roll?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_dob")?> </span>: <?=date("d M Y", strtotime($student->dob))?></p>
+                    <p><span><?=$this->lang->line("profile_dob")?> :</span> <?=date("d M Y", strtotime($student->dob))?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_sex")?> </span>: <?=$student->sex?></p>
+                    <p><span><?=$this->lang->line("profile_sex")?> :</span> <?=$student->sex?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_religion")?> </span>: <?=$student->religion?></p>
+                    <p><span><?=$this->lang->line("profile_religion")?> :</span> <?=$student->religion?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_email")?> </span>: <?=$student->email?></p>
+                    <p><span><?=$this->lang->line("profile_email")?> :</span> <?=$student->email?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_phone")?> </span>: <?=$student->phone?></p>
+                    <p><span><?=$this->lang->line("profile_phone")?> :</span> <?=$student->phone?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_address")?> </span>: <?=$student->address?></p>
+                    <p><span><?=$this->lang->line("profile_address")?> :</span> <?=$student->address?></p>
                 </div>
                 <?php if($usertype == "Admin") { ?>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_username")?> </span>: <?=$student->username?></p>
+                    <p><span><?=$this->lang->line("profile_username")?> :</span> <?=$student->username?></p>
                 </div>
                 <?php } ?>
             </div>
@@ -146,28 +147,28 @@
 
             <div class="row">
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_guargian_name")?> </span>: <?=$parent->name?></p>
+                    <p><span><?=$this->lang->line("profile_guargian_name")?> :</span> <?=$parent->name?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_father_name")?> </span>: <?=$parent->father_name?></p>
+                    <p><span><?=$this->lang->line("profile_father_name")?> :</span> <?=$parent->father_name?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_mother_name")?> </span>: <?=$parent->mother_name?></p>
+                    <p><span><?=$this->lang->line("profile_mother_name")?> :</span> <?=$parent->mother_name?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_father_profession")?> </span>: <?=$parent->father_profession?></p>
+                    <p><span><?=$this->lang->line("profile_father_profession")?> :</span> <?=$parent->father_profession?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_mother_profession")?> </span>: <?=$parent->mother_profession?></p>
+                    <p><span><?=$this->lang->line("profile_mother_profession")?> :</span> <?=$parent->mother_profession?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_email")?> </span>: <?=$parent->email?></p>
+                    <p><span><?=$this->lang->line("profile_email")?> :</span> <?=$parent->email?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_phone")?> </span>: <?=$parent->phone?></p>
+                    <p><span><?=$this->lang->line("profile_phone")?> :</span> <?=$parent->phone?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_address")?> </span>: <?=$parent->address?></p>
+                    <p><span><?=$this->lang->line("profile_address")?> :</span> <?=$parent->address?></p>
                 </div>
             </div>
             <?php
@@ -192,22 +193,22 @@
             <h1><?=$this->lang->line("personal_information")?></h1>
             <div class="row">
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_father_name")?> </span>: <?=$parentes->father_name?></p>
+                    <p><span><?=$this->lang->line("profile_father_name")?> :</span> <?=$parentes->father_name?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_father_profession")?> </span>: <?=$parentes->father_profession?></p>
+                    <p><span><?=$this->lang->line("profile_father_profession")?> :</span> <?=$parentes->father_profession?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_mother_name")?> </span>: <?=$parentes->mother_name?></p>
+                    <p><span><?=$this->lang->line("profile_mother_name")?> :</span> <?=$parentes->mother_name?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_mother_profession")?> </span>: <?=$parentes->mother_profession?></p>
+                    <p><span><?=$this->lang->line("profile_mother_profession")?> :</span> <?=$parentes->mother_profession?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_phone")?> </span>: <?=$parentes->phone?></p>
+                    <p><span><?=$this->lang->line("profile_phone")?> :</span> <?=$parentes->phone?></p>
                 </div>
                 <div class="profile-view-tab">
-                    <p><span><?=$this->lang->line("profile_address")?> </span>: <?=$parentes->address?></p>
+                    <p><span><?=$this->lang->line("profile_address")?> :</span> <?=$parentes->address?></p>
                 </div>
             </div>
         </div>

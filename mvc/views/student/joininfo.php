@@ -12,7 +12,7 @@
 	                        else
 	                            echo "<div class='form-group' >";
 	                    ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_classes")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_classes")?><span class="required">*</span></label>
 						<div class="col-sm-9">
 							<input type="hidden" id="hidden_classesID" value="<?=set_value("classesID", $student->classesID)?>" />
 							推荐
@@ -88,7 +88,7 @@
 	                        else
 	                            echo "<div class='form-group' >";
 	                    ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_subjectStartdate")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_subjectStartdate")?><span class="required">*</span></label>
 						<div class="col-sm-9">
 							<?php if (isset($student)) {?>
 							<input type="text" class="form-control" id="subjectStartdate" name="subjectStartdate" value="<?=set_value('subjectStartdate',$student->subjectStart_date)?>" placeholder="1992-08-02">
@@ -107,7 +107,7 @@
 	                        else
 	                            echo "<div class='form-group' >";
 	                    ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_subjectEnddate")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_subjectEnddate")?><span class="required">*</span></label>
 						<div class="col-sm-9">
 							<?php if (isset($student)) {?>
 							<input type="text" class="form-control" id="subjectEnddate" name="subjectEnddate" value="<?=set_value('subjectEnddate',$student->subjectEnd_date)?>" placeholder="1992-08-02">

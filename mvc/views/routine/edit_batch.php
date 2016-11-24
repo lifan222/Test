@@ -21,7 +21,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="subjectID" class="col-sm-2 control-label">
-                            <?=$this->lang->line("routine_subject")?><span class="required">必須</span>
+                            <?=$this->lang->line("routine_subject")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <?php
@@ -54,7 +54,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="start_time" class="col-sm-2 control-label">
-                            <?=$this->lang->line("routine_start_time")?><span class="required">必須</span>
+                            <?=$this->lang->line("routine_start_time")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="start_time" name="start_time" value="<?=set_value('start_time', $start_time)?>" >
@@ -71,7 +71,7 @@
                             echo "<div class='form-group'>";
                     ?>
                         <label for="end_time" class="col-sm-2 control-label">
-                            <?=$this->lang->line("routine_end_time")?><span class="required">必須</span>
+                            <?=$this->lang->line("routine_end_time")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="end_time" name="end_time" value="<?=set_value('end_time', $end_time)?>" >

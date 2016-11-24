@@ -23,7 +23,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="code_value" class="col-sm-2 control-label">
-                            <?=$this->lang->line("setting_code_chinese_name")?><span class="required">必須</span>
+                            <?=$this->lang->line("setting_code_chinese_name")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <?php
@@ -44,7 +44,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="codevalue" class="col-sm-2 control-label">
-                            <?=$this->lang->line("setting_code_value")?><span class="required">必須</span>
+                            <?=$this->lang->line("setting_code_value")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="codevalue" name="codevalue" value="<?=set_value('codevalue')?>" >

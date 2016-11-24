@@ -46,16 +46,16 @@
                                         if($class->classesID <> "1") {
                             ?>
                                 <tr>
-                                    <td data-title="<?=$this->lang->line('slno')?>">
+                                    <td id="case-no" data-title="<?=$this->lang->line('slno')?>">
                                         <?php echo $i; ?>
                                     </td>
-                                    <td data-title="<?=$this->lang->line('classes_name')?>">
+                                    <td id="case-name" data-title="<?=$this->lang->line('classes_name')?>">
                                         <?php echo $class->classes; ?>
                                     </td>
-                                    <td data-title="<?=$this->lang->line('classes_amount')?>">
+                                    <td id="case-fee" data-title="<?=$this->lang->line('classes_amount')?>">
                                         <?php echo $class->amount; ?>
                                     </td>
-                                    <td data-title="<?=$this->lang->line('classes_note')?>">
+                                    <td id="case-comment" data-title="<?=$this->lang->line('classes_note')?>">
                                         <?php echo $class->note; ?>
                                     </td>
                                     <!-- <td data-title="<?=$this->lang->line('classes_category')?>">
@@ -66,7 +66,7 @@
                                             }
                                         ?>
                                     </td> -->
-                                    <td data-title="<?=$this->lang->line('classes_note')?>">
+                                    <td id="case-note" data-title="<?=$this->lang->line('classes_note')?>">
                                         <?php
                                         
                                             $count = 0;

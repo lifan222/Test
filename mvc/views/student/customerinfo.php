@@ -17,7 +17,7 @@ if($usertype <> "Student") {
 		                        else
 		                            echo "<div class='form-group' >";
 		                    ?>
-							<label class="col-sm-3 control-label"><?=$this->lang->line("student_salesman")?> <span class="required">必須</span></label>
+							<label class="col-sm-3 control-label"><?=$this->lang->line("student_salesman")?> <span class="required">*</span></label>
 								<div class="col-sm-9">
 								  <div class="select2-wrapper">
                                      <?php
@@ -66,7 +66,7 @@ if($usertype <> "Student") {
 							 else
 									 echo "<div class='form-group' >";
 					 ?>
-			<label class="col-sm-3 control-label"><?=$this->lang->line("student_input_date")?><span class="required">必須</span></label>
+			<label class="col-sm-3 control-label"><?=$this->lang->line("student_input_date")?><span class="required">*</span></label>
 			<div class="col-sm-9">
 			<?php if (isset($student)) {?>
 			<input type="text" class="form-control" id="input_date" name="input_date" value="<?=set_value('input_date',$student->input_date)?>" placeholder="1992/08/02">
@@ -100,7 +100,7 @@ if($usertype <> "Student") {
 	                        else
 	                            echo "<div class='form-group' >";
 	                    ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_name")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_name")?><span class="required">*</span></label>
 						<div class="col-sm-9">
 						    <?php if (isset($student)) {?>
 							<input type="text" class="form-control" id="name_id" name="name" value="<?=set_value('name',$student->name)?>"   placeholder="张三">
@@ -119,7 +119,7 @@ if($usertype <> "Student") {
 	                        else
 	                            echo "<div class='form-group' >";
 	                    ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_dob")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_dob")?><span class="required">*</span></label>
 						<div class="col-sm-9">
 							<?php if (isset($student)) {?>
 							<input type="text" class="form-control" id="dob" name="dob" value="<?=set_value('dob',$student->dob)?>" placeholder="1992/08/02">
@@ -159,7 +159,7 @@ if($usertype <> "Student") {
 	                        else
 	                            echo "<div class='form-group' >";
 	                    ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_phone")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_phone")?><span class="required">*</span></label>
 						<div class="col-sm-9">
 						<?php if (isset($student)) {?>
 							<input type="text" class="form-control" id="phone" name="phone" value="<?=set_value('phone',$student->phone)?>"  placeholder="090-1111-2222">
@@ -180,7 +180,7 @@ if($usertype <> "Student") {
 	                        else
 	                            echo "<div class='form-group' >";
 	                    ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_possibility")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_possibility")?><span class="required">*</span></label>
 						<div class="col-sm-9">
 						<?php
                                        $studentCategory = $this->session->userdata("studentPossibility");
@@ -264,7 +264,7 @@ if($usertype <> "Student") {
 	                        else
 	                            echo "<div class='form-group' >";
 	                    ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_sex")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_sex")?><span class="required">*</span></label>
 							<div class="col-sm-9">
                             <?php
                                if (isset($student)) {
@@ -285,7 +285,7 @@ if($usertype <> "Student") {
 	                        else
 	                            echo "<div class='form-group' >";
 	                  ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_email")?><!--<span class="required">必須</span>--></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_email")?><!--<span class="required">*</span>--></label>
 						<div class="col-sm-9">
 						<?php if (isset($student)) {?>
 						<input type="text" class="form-control" id="email" name="email" value="<?=set_value('email',$student->email)?>"  placeholder="test@gmail.com">
@@ -303,7 +303,7 @@ if($usertype <> "Student") {
 	                        else
 	                            echo "<div class='form-group' >";
 	                  ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_category")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_category")?><span class="required">*</span></label>
 						<div class="col-sm-9">
 						<?php
                                        $studentCategory = $this->session->userdata("studentCategory");
@@ -325,7 +325,7 @@ if($usertype <> "Student") {
 	                        else
 	                            echo "<div class='form-group' >";
 	                  ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_source")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_source")?><span class="required">*</span></label>
 						<div class="col-sm-9">
                             <?php
                                 $studentSource = $this->session->userdata("studentSource");
@@ -350,7 +350,7 @@ if($usertype <> "Student") {
 	                        else
 	                            echo "<div class='form-group' >";
 	                  ?>
-						<label class="col-sm-3 control-label"><?=$this->lang->line("student_source_memo")?><span class="required">必須</span></label>
+						<label class="col-sm-3 control-label"><?=$this->lang->line("student_source_memo")?><span class="required">*</span></label>
 						<div class="col-sm-9">
 						<?php 
 							$studentSourcePartner = $this->session->userdata("studentSourcePartner"); 

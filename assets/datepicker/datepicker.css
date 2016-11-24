@@ -111,7 +111,7 @@
 }
 .datepicker table tr td.old,
 .datepicker table tr td.new {
-  color: #999999;
+  color: #e3e3e3;
 }
 .datepicker table tr td.disabled,
 .datepicker table tr td.disabled:hover {

@@ -5,33 +5,46 @@
                 <section class="sidebar">
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
-                        <div class="pull-left image">
-                            <img style="display:block" src="<?=base_url("uploads/images/".$this->session->userdata('photo'));
-                                ?>" class="img-circle" alt="" />
-                        </div>
 
-                        <div class="pull-left info">
+                        <div class="pull-left image">
+                            <img style="display:block" src="<?=base_url("uploads/images/wxlogo.png");?>"  alt="" />
+                            <p id="image-top-text"><?=$this->lang->line($this->session->userdata("usertype"))?></p>
+
                             <?php
-                                $name = $this->session->userdata("name");
-                                if(iconv_strlen($name) > 4) {
-                                   $name = iconv_substr($name, 0,4). "..";
-                                }
-                                echo "<p>".$name."</p>";
-                            ?>
-                           <?php 
-                                    $usertype = $this->session->userdata('usertype');
-                                    if($usertype == "Admin" ){?>                                    	
-                                         <a href="<?=base_url("profile/index")?>">
-                                    <?php } elseif ($usertype == "Teacher" || $usertype == "Salesman"|| $usertype == "Receptionist"|| $usertype == "TeacherManager"){?>
-                                              <a href="<?=base_url("teacher/view/".$this->session->userdata('loginuserID'))?>">
+                            $usertype = $this->session->userdata('usertype');
+                            if($usertype == "Admin" ){?>
+                            <a href="<?=base_url("profile/index")?>">
+                                <?php } elseif ($usertype == "Teacher" || $usertype == "Salesman"|| $usertype == "Receptionist"|| $usertype == "TeacherManager"){?>
+                                <a href="<?=base_url("teacher/view/".$this->session->userdata('loginuserID'))?>">
                                     <?php } elseif($usertype == "Student") { ?>
-                                         <a href="<?=base_url("/student/view/".$this->session->userdata('loginuserID')."/3")?>">
-                                    <?php } ?>   
-                                <i class="fa fa-hand-o-right color-green"></i>
-                                <?=$this->lang->line($this->session->userdata("usertype"))?>
-                            </a>
+                                    <a href="<?=base_url("/student/view/".$this->session->userdata('loginuserID')."/3")?>">
+                                        <?php } ?>
+                                        <img style="display:block" src="<?=base_url("uploads/images/wxadmin.png");
+                                        ?>"  alt="" /></a>
+
+                            
                         </div>
                     </div>
+
+
+                    <style>
+                        #image-top-text {
+                            color: rgb(255, 255, 255);
+                            font-size: 20px;
+                            text-align: center;
+                            margin-bottom: 10px;
+
+
+                        }
+
+
+                        #left-info-text {
+                            font-size: 20px;
+                        }
+
+
+                    </style>
+
 
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <?php $usertype = $this->session->userdata("usertype"); 
@@ -171,7 +184,7 @@
                         <?php } ?>
 
 
-                        
+
                         <?php if($usertype == "Admin") { ?>
                             <li class="treeview">
                                 <a href="#">
@@ -189,7 +202,7 @@
                                 </ul>
                             </li>
                         <?php } ?>
-                        
+
                         
                     </ul>
 

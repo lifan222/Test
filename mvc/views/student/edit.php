@@ -6,8 +6,8 @@
     -webkit-border-radius: 6px;   /* Safari,Google Chrome */
     -moz-border-radius: 6px;      /* Firefox12まで */
     border-radius: 6px;           /* Firefox13以降 */
-    background-color: #ff3957;
-    color: #fff;
+    background-color: transparent;
+    color: #ffbd67;
     font-weight: normal;
     font-size: 100%;
 }
@@ -23,7 +23,7 @@ span.label {
 <?php
     $usertype = $this->session->userdata("usertype");
 ?>
-<div class="box">
+<div class="box box-student">
     <div class="box-header">
         <h3 class="box-title"><i class="fa icon-student"></i> <?=$this->lang->line('panel_title')?></h3>
 

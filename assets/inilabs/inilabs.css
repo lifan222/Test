@@ -41,6 +41,7 @@
 
 .navbar-nav > .user-menu > .dropdown-menu > li.user-footer > div.text-center > a {
   color: #fff;
+    font-weight: bold;
 }
 /* User Image & Login Close */
 
@@ -78,8 +79,8 @@
 
 /* Side Menu  Start */
 .sidebar .sidebar-menu > li > a:hover {
-  background-color:  #232a2f !important;
-  color: #EEEEEE !important;
+  background-color: rgb(41, 52, 68) !important;
+  color: #ffffff !important;
 }
 .sidebar .sidebar-menu .treeview-menu > li > a:hover {
   background-color: #232a2f;
@@ -101,8 +102,8 @@
 /* Page Header Add Module */
 .page-header > a {
   font-size: 14px;
-  border-bottom: 1px solid #707478;
-  color: #707478;
+  border-bottom: 1px solid #ffffff;
+  color: #5fa7d8;
 }
 
 .page-header > a:hover {
@@ -119,14 +120,14 @@
 
 label {
   font-weight: 000;
-  color: #707478;
+  color: #000000;
 }
 /* Lable Close */
 
 /* From span Start*/
 .form-horizontal > .form-group > span {
   font-weight: 000;
-  color: #FF0B07;
+  color: #ffbd67;
 }
 /*  From span Close */
 
@@ -148,6 +149,118 @@ label {
   font-size: 12px;
 }
 
+#teacher-no {
+    width: 5%
+}
+
+#teacher-ming{
+    width:15%;
+}
+
+#teacher-class{
+    width: 20%;
+}
+
+#teacher-mail{
+    width: 30%;
+}
+
+#teacher-state{
+    width: 10%;
+}
+
+#student-no{
+    width: 5%;
+}
+
+#student-ming{
+    width: 5%;
+}
+
+#student-tele{
+    width: 10%;
+}
+
+#student-wexin{
+    width: 5%;
+}
+
+#student-state {
+    width: 10%;
+}
+
+#student-school{
+    width: 10%;
+}
+
+#student-from{
+    width: 15%;
+}
+
+#student-teacher{
+    width: 5%;
+}
+
+#student-possible{
+    width: 5%;
+}
+
+#student-admin{
+    width: 5%;
+}
+
+#student-judge{
+    width: 5%;
+}
+#student-time{
+    width: 10%;
+}
+
+#student-active{
+    width: 20%;
+}
+
+#case-no{
+    width: 5%;
+}
+
+#case-name{
+    width: 10%;
+}
+
+#case-fee{
+    width: 5%;
+}
+
+#case-comment{
+    width: 10%;
+}
+
+#case-note{
+    width: 50%;
+}
+
+#course-no{
+    width: 5%;
+}
+
+#course-name{
+    width: 30%;
+}
+
+#course-fee{
+    width: 10%;
+}
+
+#course-group{
+    width: 25%;
+}
+
+#course-teacher{
+    width: 10%;
+}
+
+
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
 .pagination > .disabled > span:focus,
@@ -163,8 +276,8 @@ label {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  border-color: #242A30;
-  background-color: #242A30;
+  border-color: #5fa7d8;
+  background-color: #5fa7d8;
 }
 
 .pagination > li > a,
@@ -175,10 +288,12 @@ label {
 
 /* Login Start */
 .white-bg-login {
-    background: none repeat scroll 0 0 #F1F2F7;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
 }
 .form-box .header {
-    background: none repeat scroll 0 0 #1A2229;
+    background: none repeat scroll 0 0 transparent;
+    border: 3px solid;
+    border-color: #5fa7d8;
 }
 
 .form-box > .header {
@@ -193,8 +308,8 @@ label {
 
 .form-box .body > .form-group > input,
 .form-box .footer > .form-group > input {
-    border: 1px solid #E2E7EB;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.070) inset;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0) inset;
 }
 
 .checkbox > label > input[type="checkbox"] {
@@ -204,11 +319,11 @@ label {
 }
 
 .checkbox > label > span {
-  color:#a4b1c2;
+  color: #ffffff;
 }
 
 .checkbox > span > label > a {
-  color:#a4b1c2;
+  color: #ffffff;
 }
 /* Login Close */
 
@@ -258,7 +373,7 @@ label {
 
 /* Biograph Start */
 .profile-view-head {
-    background: #b5bbc8;
+    background: rgb(95, 167, 219);
     color: #fff;
     text-align: center;
 /*    font-style: italic;*/
@@ -270,9 +385,7 @@ label {
 }
 
 .profile-view-head  a  {
-    border-radius: 50%;
     -webkit-border-radius: 50%;
-    border: 10px solid rgba(256,256,256,0.3);
     display: inline-block;
 }
 
@@ -294,13 +407,20 @@ label {
 }
 
 .profile-view-dis {
-    color: #89817e;
+    background: transparent;
+    border: 3px solid #5FA7DB;
 }
 
 .profile-view-dis h1 {
+    color: white;
     font-size: 22px;
     font-weight: 300;
     margin: 0 0 20px;
+}
+
+.profile-view-dis p {
+    color: #000000;
+    font-size: 15px;
 }
 
 .profile-view-tab {
@@ -359,7 +479,7 @@ label {
 
 /* View Button Start */
 .btn-cs {
-  background-color: #FF766C;
+  background-color: #ffbd67;
   color: #FFFFFF;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -579,7 +699,7 @@ label {
 .onoffswitch-small-inner:before {
     content: "ON";
     padding-left: 9px;
-    background-color: #34A7C1; color: #FFFFFF;
+    background-color: #5fa7d8; color: #FFFFFF;
 }
 .onoffswitch-small-inner:after {
     content: "OFF";

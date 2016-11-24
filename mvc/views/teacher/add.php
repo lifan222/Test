@@ -1,5 +1,5 @@
 
-<div class="box">
+<div class="box box-teacher">
     <div class="box-header">
         <h3 class="box-title"><i class="fa icon-teacher"></i> <?=$this->lang->line('panel_title')?></h3>
 
@@ -24,7 +24,7 @@
                     ?>
                         <label for="name_id" class="col-sm-2 control-label">
                             <?=$this->lang->line("teacher_name")?>
-                            <span class="required">必須</span>
+                            <span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="name_id" name="name" value="<?=set_value('name')?>" >
@@ -42,7 +42,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="sex" class="col-sm-2 control-label">
-                            <?=$this->lang->line("teacher_sex")?><span class="required">必須</span>
+                            <?=$this->lang->line("teacher_sex")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <?php
@@ -61,7 +61,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="teacher_type" class="col-sm-2 control-label">
-                            <?=$this->lang->line("teacher_type")?><span class="required">必須</span>
+                            <?=$this->lang->line("teacher_type")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                           <?php
@@ -156,7 +156,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="email" class="col-sm-2 control-label">
-                            <?=$this->lang->line("teacher_email")?><span class="required">必須</span>
+                            <?=$this->lang->line("teacher_email")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="email" name="email" value="<?=set_value('email')?>" >
@@ -207,7 +207,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="jod" class="col-sm-2 control-label">
-                            <?=$this->lang->line("teacher_jod")?><span class="required">必須</span>
+                            <?=$this->lang->line("teacher_jod")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="jod" name="jod" value="<?=set_value('jod')?>" >
@@ -224,7 +224,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="wage_type" class="col-sm-2 control-label">
-                            <?=$this->lang->line("teacher_wage_type")?><span class="required">必須</span>
+                            <?=$this->lang->line("teacher_wage_type")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                         <?php
@@ -248,7 +248,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="fixed_remuneration" class="col-sm-2 control-label">
-                            <?=$this->lang->line("teacher_wage_fixed_remuneration")?><span class="required">必須</span>
+                            <?=$this->lang->line("teacher_wage_fixed_remuneration")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="fixed_remuneration" name="fixed_remuneration" value="<?=set_value('fixed_remuneration', 0)?>" >
@@ -265,7 +265,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="affairs_timing_remuneration" class="col-sm-2 control-label">
-                            <?=$this->lang->line("teacher_wage_affairs_timing_remuneration")?><span class="required">必須</span>
+                            <?=$this->lang->line("teacher_wage_affairs_timing_remuneration")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="affairs_timing_remuneration" name="affairs_timing_remuneration" value="<?=set_value('affairs_timing_remuneration', 0)?>" >
@@ -282,7 +282,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="lecture_timing_remuneration" class="col-sm-2 control-label">
-                            <?=$this->lang->line("teacher_wage_lecture_timing_remuneration")?><span class="required">必須</span>
+                            <?=$this->lang->line("teacher_wage_lecture_timing_remuneration")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="lecture_timing_remuneration" name="lecture_timing_remuneration" value="<?=set_value('lecture_timing_remuneration', 0)?>" >
@@ -299,7 +299,7 @@
                             echo "<div class='form-group' >";
                     ?>
                         <label for="vip_timing_remuneration" class="col-sm-2 control-label">
-                            <?=$this->lang->line("teacher_wage_vip_timing_remuneration")?><span class="required">必須</span>
+                            <?=$this->lang->line("teacher_wage_vip_timing_remuneration")?><span class="required">*</span>
                         </label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="vip_timing_remuneration" name="vip_timing_remuneration" value="<?=set_value('vip_timing_remuneration', 0)?>" >
