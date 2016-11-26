@@ -202,7 +202,7 @@ $('#subject').change(function() {
         if(!subjects[index]){
             continue;
         }
-        $('#subjects').append("<button type='button' class='btn btn-success btn-xs' onclick='removesubject(this)' style='margin: 5px'>"
+        $('#subjects').append("<button type='button' class='btn btn-classadd btn-xs' onclick='removesubject(this)' style='margin: 5px'>"
         + subjects[index] + "<span class='glyphicon glyphicon-remove'></span></button>");
         $('#subjects').append("<input type='hidden' name='subjects_input[]' value='"
         + index + "'/>");

@@ -32,7 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 a {
-  color: #ffffff;
+  color: #000000;
 }
 a:hover,
 a:active,
@@ -1215,11 +1215,14 @@ body > .header .logo .icon {
   font-size: 12px;
   line-height: 1.42857;
   width: 100%;
+  margin-bottom: 5px;
 }
 .form-control:focus {
-  border-color: #ffffff !important;
+  border-color: #5fa7d8 !important;
   box-shadow: none;
 }
+
+
 .form-group.has-success label {
   color: #00a65a;
 }
@@ -1961,9 +1964,10 @@ Component: timeline
 .btn.btn-default:active,
 .btn.btn-default.hover {
   background-color: transparent!important;
+    color:#1f5f8c;
 }
 .btn.btn-default.btn-flat {
-  border-bottom-color: #d9dadc;
+  border-bottom-color: transparent;
 }
 .btn.btn-primary {
   color: #fff;
@@ -1990,30 +1994,52 @@ Component: timeline
   border-color: #ffcd8d;
 }
 
+.btn.btn-classadd {
+  color: #5fa7d8;
+  background-color: transparent;
+  border-color: #5fa7d8;
+}
+.btn.btn-classadd:hover,
+.btn.btn-classadd:active,
+.btn.btn-classadd.hover {
+  color: #fff;
+  background-color: #5fa7d8;
+  border-color: #5fa7d8;
+}
+
+#subjects{
+  padding-bottom: 20px;
+}
+
+#teacherIDs{
+  padding-bottom: 20px;
+}
+
 .btn.btn-eye {
   color: #fff;
-  background-color: #55bf8c;
-  border-color: #55bf8c;
+  background-color: #00acac;
+  border-color: #00acac;
 }
 .btn.btn-eye:hover,
 .btn.btn-eye:active,
 .btn.btn-eye.hover {
   color: #fff;
-  background-color: #58d19b;
-  border-color: #58d19b;
+  background-color: #00bdbd;
+  border-color: #00bdbd;
 }
 
 .btn.btn-info {
   color: #fff;
   background-color: #5fa7d8;
   border-color: #5fa7d8;
+  width:200px;
 }
 .btn.btn-info:hover,
 .btn.btn-info:active,
 .btn.btn-info.hover {
   color: #fff;
-  background-color: #4AABC8;
-  border-color: #4AABC8;
+  background-color: #89c3ec;
+  border-color: #89c3ec;
 }
 .btn.btn-danger {
   color: #fff;
@@ -2706,7 +2732,7 @@ Component: timeline
   background: none repeat scroll 0 0 #5fa7d8;
 }
 .skin-blue .navbar .sidebar-toggle:hover .icon-bar {
-  background: none repeat scroll 0 0 #333333 !important;
+  background: none repeat scroll  #1f5f8c !important;
 }
 /* skin-blue logo */
 .skin-blue .logo {

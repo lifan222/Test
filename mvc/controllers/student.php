@@ -1113,8 +1113,8 @@ class Student extends Admin_Controller {
 		$course_details = $this->course_details_m->get_by_classID($classesID);
 		foreach($course_details as $item) { 
 			$subject = $this->subject_m->get($item->subjectID);
-			echo "<button type='button' class='btn btn-success btn-xs' style='margin: 5px'>".
-				$subject->subject."</button>"; 
+			echo "<button type='button' class='btn btn-classadd btn-xs' style='margin: 5px'>".
+				$subject->subject."</button>";
 		}
 	}
 

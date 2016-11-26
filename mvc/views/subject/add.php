@@ -201,7 +201,7 @@ $('#teacherID').change(function() {
         if(!teacherIDs[index]){
             continue;
         }
-        $('#teacherIDs').append("<button type='button' class='btn btn-success btn-xs' onclick='removesubject(this)' style='margin: 5px'>"
+        $('#teacherIDs').append("<button type='button' class='btn btn-classadd btn-xs' onclick='removesubject(this)' style='margin: 5px'>"
         + teacherIDs[index] + "<span class='glyphicon glyphicon-remove'></span></button>");
         $('#teacherIDs').append("<input type='hidden' name='teacherIDs_input[]' value='"
         + index + "'/>");

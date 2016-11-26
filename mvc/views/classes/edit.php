@@ -118,7 +118,7 @@
                                     if($subjectIDs){
                                         foreach($subjectIDs as $subjectID) { 
                                             $subject = $this->subject_m->get($subjectID);
-                                            echo "<button type='button' class='btn btn-success btn-xs' onclick='removesubject(this)' style='margin: 5px'>".
+                                            echo "<button type='button' class='btn btn-classadd btn-xs' onclick='removesubject(this)' style='margin: 5px'>".
                                                 $subject->subject."<span class='glyphicon glyphicon-remove'></span></button>".
                                                 "<input type='hidden' name='subjects_input[]' value='".
                                                 $subjectID."'/>"; 
@@ -133,7 +133,7 @@
                                         }else{
                                             $subject_name = $item->subject_name;
                                         }
-                                        echo "<button type='button' class='btn btn-success btn-xs' onclick='removesubject(this)' style='margin: 5px'>".
+                                        echo "<button type='button' class='btn btn-classadd btn-xs' onclick='removesubject(this)' style='margin: 5px'>".
                                             $subject_name."<span class='glyphicon glyphicon-remove'></span></button>".
                                             "<input type='hidden' name='subjects_input[]' value='".
                                             $item->subjectID."'/>"; 
@@ -166,7 +166,7 @@ $('#subject').change(function() {
         if(!subjects[index]){
             continue;
         }
-        $('#subjects').append("<button type='button' class='btn btn-success btn-xs' onclick='removesubject(this)' style='margin: 5px'>"
+        $('#subjects').append("<button type='button' class='btn btn-classadd btn-xs' onclick='removesubject(this)' style='margin: 5px'>"
         + subjects[index] + "<span class='glyphicon glyphicon-remove'></span></button>");
         $('#subjects').append("<input type='hidden' name='subjects_input[]' value='"
         + index + "'/>");

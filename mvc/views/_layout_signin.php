@@ -22,7 +22,7 @@
     <div class="col-md-4 col-md-offset-4 marg" style="margin-top:50px;">
         <?php
             if(count($siteinfos->photo)) {
-                echo "<center><img width='140' height='42' src=".base_url('uploads/images/'.$siteinfos->photo)." /></center>";
+                echo "<center><img width='200' height='' src=".base_url('uploads/images/'.$siteinfos->photo)." /></center>";
             }
         ?>
         <!-- 

@@ -107,8 +107,8 @@
 }
 
 .page-header > a:hover {
-  border-bottom: 1px solid #1A2229;
-  color: #1A2229;
+  border-bottom: 1px solid #1f5f8c;
+  color: #1f5f8c;
 }
 /* page Header Add Module */
 
@@ -141,7 +141,7 @@ label {
   font-weight: 300;
 }
 .table-bordered > tbody > tr > td {
-  color: #707070;
+  color: #000000;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > td {
@@ -298,7 +298,7 @@ label {
 }
 
 .form-box > .header {
-  margin-top: 120px;
+  margin-top: 160px;
 }
 
 .form-box .body, .form-box .footer {
@@ -313,6 +313,11 @@ label {
     box-shadow: 0 0 0 rgba(255, 255, 255, 0) inset;
 }
 
+#input-back {
+    background: transparent;
+    border-color: #5fa7d8;
+}
+
 .checkbox > label > input[type="checkbox"] {
     float: left;
     padding: 0px;
@@ -320,19 +325,28 @@ label {
 }
 
 .checkbox > label > span {
-  color: #ffffff;
+  color: #636363;
 }
 
 .checkbox > span > label > a {
-  color: #ffffff;
+  color: #636363;
 }
 /* Login Close */
 
 /* Button Margin ex: edit, delete, view Start */
 .mrg {
-  margin-left: 2px;
+
+    margin-left: 2px;
   margin-right: 2px;
+    width:25px;
+    height: 25px;
+
 }
+
+#pay{
+    height:33px;
+}
+
 /* Button Margin ex: edit, delete, view Close */
 
 /* File Browse Start */
@@ -436,6 +450,11 @@ label {
     width: 40%;
 }
 
+#time{
+    background: #5fa7d8;
+    color: #ffffff;
+}
+
 /* Biograph Close */
 
 /* Profile Graph Start */
@@ -497,9 +516,11 @@ label {
 }
 
 .btn-cs:hover {
-  background-color: #ED857E;
+  background-color: #ffcd8d;
   color: #EDEDED;
 }
+
+
 
 .btn-sm-cs {
     border-radius: 3px;

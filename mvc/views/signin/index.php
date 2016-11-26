@@ -43,10 +43,10 @@
                 }
                 ?>
                 <div class="form-group">
-                    <input class="form-control" placeholder="Username" name="username" type="text" autofocus value="<?=set_value('username')?>">
+                    <input id="input-back" class="form-control" placeholder="Username" name="username" type="text" autofocus value="<?=set_value('username')?>">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" placeholder="Password" name="password" type="password">
+                    <input id="input-back" class="form-control" placeholder="Password" name="password" type="password" autocomplete="new-password">
                 </div>
 
 

@@ -104,7 +104,7 @@
                         <span class="col-sm-4 control-label">
                             <?php echo form_error('subject_group'); ?>
                         </span>
-                    </div>                    
+                    </div>
                     
                     <!--<?php 
                         if(form_error('subject_author')) 
@@ -187,7 +187,7 @@
                                         }else{
                                             $teacher_name = $item->name;
                                         }
-                                        echo "<button type='button' class='btn btn-success btn-xs' onclick='removesubject(this)' style='margin: 5px'>".
+                                        echo "<button type='button' class='btn btn-classadd btn-xs' onclick='removesubject(this)' style='margin: 5px'>".
                                             $teacher_name."<span class='glyphicon glyphicon-remove'></span></button>".
                                             "<input type='hidden' name='teacherIDs_input[]' value='".
                                             $item->teacherID."'/>"; 
@@ -221,7 +221,7 @@ $('#teacherID').change(function() {
         if(!teacherIDs[index]){
             continue;
         }
-        $('#teacherIDs').append("<button type='button' class='btn btn-success btn-xs' onclick='removesubject(this)' style='margin: 5px'>"
+        $('#teacherIDs').append("<button type='button' class='btn btn-classadd btn-xs' onclick='removesubject(this)' style='margin: 5px'>"
         + teacherIDs[index] + "<span class='glyphicon glyphicon-remove'></span></button>");
         $('#teacherIDs').append("<input type='hidden' name='teacherIDs_input[]' value='"
         + index + "'/>");

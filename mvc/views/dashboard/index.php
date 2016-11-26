@@ -93,7 +93,9 @@
           margin-left: 60%;
       }
 
-
+    #calendar{
+        padding-top: 3%;
+    }
 
 
   </style>
@@ -154,7 +156,7 @@
 
                     foreach ($var as $key => $value) {
                         echo '{';
-                        echo "title: '有".$value."门课程', ";
+                        echo "title: '".$value."门课程', ";
                         echo "start: '".$key."', ";
                         echo "color: 'transparent', ";
                         echo '},';

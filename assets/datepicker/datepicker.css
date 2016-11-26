@@ -24,6 +24,8 @@
 .datepicker-dropdown {
   top: 0;
   left: 0;
+  background: #5fa7d8;
+  color: #ffffff;
 }
 .datepicker-dropdown:before {
   content: '';
@@ -32,7 +34,7 @@
   border-right: 7px solid transparent;
   border-bottom: 7px solid #ccc;
   border-top: 0;
-  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-color: rgba(0, 0, 0, .2);
   position: absolute;
 }
 .datepicker-dropdown:after {
@@ -106,7 +108,7 @@
 }
 .datepicker table tr td.day:hover,
 .datepicker table tr td.day.focused {
-  background: #eeeeee;
+  background: #1f5f8c;
   cursor: pointer;
 }
 .datepicker table tr td.old,
@@ -295,7 +297,7 @@
   background-image: -moz-linear-gradient(top, #1a2229, #1a2229);
   background-image: -ms-linear-gradient(top, #1a2229, #1a2229);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1a2229), to(#1a2229));
-  background-image: -webkit-linear-gradient(top, #1a2229, #1a2229);
+  background-image: -webkit-linear-gradient(top, #1f5f8c, #1f5f8c);
   background-image: -o-linear-gradient(top, #1a2229, #1a2229);
   background-image: linear-gradient(top, #1a2229, #1a2229);
   background-repeat: repeat-x;

@@ -14,7 +14,7 @@
                         $day = "a".ltrim($routinedate_ex[2],'0');
                         if($key == $day){
                             if($val == 'P'){
-                                $mark = '<div class="text-center"><i class="fa fa-diamond " aria-hidden="true"></i></div>';
+                                $mark = '<div class="text-center"><i class="fa fa-check " aria-hidden="true"></i></div>';
                             // }else{
                             //     $mark = $val;
                             }

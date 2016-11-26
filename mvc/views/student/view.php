@@ -263,7 +263,7 @@
                         $setstatus = $this->lang->line('invoice_fully_paid');
                     }
 
-                    echo "<button class='btn btn-success btn-xs'>".$setstatus."</button>";
+                    echo "<button id='pay' class='btn btn-success btn-xs'>".$setstatus."</button>";
                     if($invoice ) {
                         if($usertype <> "Student"){
 	                        if($invoice->paidamount != $invoice->amount){
@@ -528,7 +528,7 @@
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" style="margin-bottom:0px;" data-dismiss="modal"><?=$this->lang->line('close')?></button>
-                <input type="button" id="add_evaluation_btn" class="btn btn-success" value="<?=$this->lang->line("submit")?>" />
+                <input type="button" id="add_evaluation_btn" class="btn btn-cl" value="<?=$this->lang->line("submit")?>" />
             </div>
         </div>
       </div>

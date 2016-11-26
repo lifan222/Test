@@ -917,7 +917,7 @@ td.fc-event-container {
 
 .fc-row.fc-rigid .fc-content-skeleton {
 	position: absolute;
-	top: 0;
+	top: 10%;
 	left: 0;
 	right: 0;
 	height: 100%;

@@ -9,7 +9,6 @@ date_default_timezone_set('Asia/Tokyo');
 ?>
 <?php
 
-define("ENVIRONMENT", "development");
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -28,16 +27,16 @@ define("ENVIRONMENT", "development");
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-//switch(dirname(__file__)) {
-//	case '/var/www/html/school':
-//		error_reporting(E_ALL);
-//		define("ENVIRONMENT", "development");
-//	break;
-//
-//	default :
-//		define("ENVIRONMENT", "production");
-//	break;
-//}
+switch(dirname(__file__)) {
+	case '/var/www/html/school':
+		error_reporting(E_ALL);
+		define("ENVIRONMENT", "development");
+	break;
+
+	default :
+		define("ENVIRONMENT", "production");
+	break;
+}
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
